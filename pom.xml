@@ -2,9 +2,9 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.sourceallies</groupId>
-    <artifactId>aeleakdetection</artifactId>
+    <artifactId>aeleakdetectlib</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>AELeakDetectionCore</name>
+    <name>AELeakDetectionLibrary</name>
 
     <properties>
         <project.sourceEncoding>UTF-8</project.sourceEncoding>
@@ -13,7 +13,7 @@
         <junit.version>4.12</junit.version>
         <java-version>1.8</java-version>
     </properties>
-    
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -30,7 +30,7 @@
             <artifactId>spring-beans</artifactId>
             <version>${spring-version}</version>
         </dependency>
-        
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -46,7 +46,7 @@
             <artifactId>sqlite-jdbc</artifactId>
             <version>3.8.11.2</version>
         </dependency>
-        
+
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
@@ -95,5 +95,5 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-    </build>    
+    </build>
 </project>
