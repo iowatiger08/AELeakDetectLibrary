@@ -1,5 +1,5 @@
 package com.sourceallies.aeleakdetection.model;
 
-public class AETestResults {
+public class Reading {
 
 }

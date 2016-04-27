@@ -1,4 +1,4 @@
-package com.sourceallies.aeleakdetection.model;
+package com.sourceallies.aeleakdetection;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,4 +20,9 @@ public class CoreConfiguration {
         logger.info("setting default properties");
         return configurator;
     }   
+    
+    @Bean
+    public void SQLlite(){
+        
+    }
 }
