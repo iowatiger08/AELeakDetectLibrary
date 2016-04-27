@@ -6,14 +6,30 @@ import junit.framework.TestResult;
 
 public class AETest {
 
-    private Set<Reading> readings;
+    private double inletSize;
+    private double pOne;
+    private Set<AEReading> aeReadings;
     private TestResult testResult;
     
-    public Set<Reading> getReadings() {
-        return readings;
+    //isCannedTest or isConfiguredTest
+    
+    public double getInletSize() {
+        return inletSize;
     }
-    public void setReadings(Set<Reading> readings) {
-        this.readings = readings;
+    public void setInletSize(double inletSize) {
+        this.inletSize = inletSize;
+    }
+    public double getpOne() {
+        return pOne;
+    }
+    public void setpOne(double pOne) {
+        this.pOne = pOne;
+    }
+    public Set<AEReading> getAeReadings() {
+        return aeReadings;
+    }
+    public void setAeReadings(Set<AEReading> readings) {
+        this.aeReadings = readings;
     }
     public TestResult getTestResult() {
         return testResult;

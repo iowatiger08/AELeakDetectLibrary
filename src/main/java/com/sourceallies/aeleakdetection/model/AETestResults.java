@@ -1,7 +1,18 @@
 package com.sourceallies.aeleakdetection.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class AETestResults {
 
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private long id;
+    
+    private Valve valveTested;
     private Boolean coupling;
     private Integer grade;
     private Integer noise;
@@ -37,6 +48,12 @@ public class AETestResults {
     }
     public void setFlowTime(Double flowTime) {
         this.flowTime = flowTime;
+    }
+    public Valve getValveTested() {
+        return valveTested;
+    }
+    public void setValveTested(Valve valveTested) {
+        this.valveTested = valveTested;
     }
     
 }
