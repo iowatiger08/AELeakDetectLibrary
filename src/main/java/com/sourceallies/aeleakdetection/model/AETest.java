@@ -8,7 +8,9 @@ public class AETest {
 
     private double inletSize;
     private double pOne;
-    private Set<AEReading> aeReadings;
+//    private double offset;
+    
+    private Set<AETestStage> aeTestStages;
     private TestResult testResult;
     
     //isCannedTest or isConfiguredTest
@@ -25,16 +27,17 @@ public class AETest {
     public void setpOne(double pOne) {
         this.pOne = pOne;
     }
-    public Set<AEReading> getAeReadings() {
-        return aeReadings;
-    }
-    public void setAeReadings(Set<AEReading> readings) {
-        this.aeReadings = readings;
-    }
     public TestResult getTestResult() {
         return testResult;
     }
     public void setTestResult(TestResult testResult) {
         this.testResult = testResult;
     }
+    public Set<AETestStage> getAeTestStages() {
+        return aeTestStages;
+    }
+    public void setAeTestStages(Set<AETestStage> aeTestStages) {
+        this.aeTestStages = aeTestStages;
+    }
+    
 }

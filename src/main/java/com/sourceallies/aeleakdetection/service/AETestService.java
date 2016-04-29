@@ -2,6 +2,7 @@ package com.sourceallies.aeleakdetection.service;
 
 import org.springframework.stereotype.Service;
 
+import com.sourceallies.aeleakdetection.model.AEReading;
 import com.sourceallies.aeleakdetection.model.AETest;
 import com.sourceallies.aeleakdetection.model.AETestResults;
 import com.sourceallies.aeleakdetection.model.Valve;
@@ -10,6 +11,8 @@ import com.sourceallies.aeleakdetection.model.Valve;
 public interface AETestService {
 
     public AETestResults runTestForValve(AETest aeTest, Valve valve);
+    
+    public AEReading runCalc(AEReading aReading);
     
     public void saveResults();
 }
